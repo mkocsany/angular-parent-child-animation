@@ -1,0 +1,16 @@
+
+.wrap{
+  display: block;
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+.wrap p{
+    position: absolute;
+    left: 10px;  
+  }
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

@@ -1,0 +1,20 @@
+<h2>Products</h2>
+<div>
+  <button (click)="slide()">Toggle</button> | <button  (click)="updateText()">TextChange</button>
+</div>
+
+<div>
+<button (click)="singleToggle()">SingleOpen</button> | <button (click)="toggle()">MixedOpen</button>
+</div>
+<div style="border: 1px solid green; width: 200px; position: relative;" class="open-close-container" [@easyOpen]="isSingleOpen ? 'open' : 'closed'" [@queryOpen]="isOpen ? 'open' : 'closed'">
+ <div class="wrap"><p *ifChanges="text" [@fade]>{{text}}</p>
+ </div>
+ <p>First line is here</p>
+  <p>{{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
